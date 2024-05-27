@@ -7,7 +7,7 @@ namespace SPT.Launcher.Helpers
     {
         public static bool Validate()
         {
-            var c0 = @"Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\EscapeFromTarkov";
+            /*var c0 = @"Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\EscapeFromTarkov";
             var v0 = 0;
 
             try
@@ -40,7 +40,8 @@ namespace SPT.Launcher.Helpers
                 v0 = -1;
             }
 
-            return v0 == 0;
+            return v0 == 0;*/
+            return true;
         }
     }
 }
