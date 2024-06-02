@@ -160,7 +160,10 @@ namespace SPT.Launcher.Helpers
             englishLocale.level = "Level";
             englishLocale.game_path = "Game Path";
             englishLocale.patching = "Patching";
-            englishLocale.file_mismatch_dialog_message = "The input file hash doesn't match the expected hash. You may be using the wrong version\nof SPT for your client files.\n\nDo you want to continue?";
+            englishLocale.file_mismatch_dialog_message = "We noticed your EFT files do not match what we expected to see for SPT: {0}" +
+                "\nPlease check you have the latest version of live EFT installed" +
+                "\nIf not, delete SPT, update live EFT and run the Installer in an empty folder again" +
+                "\n\nAre you sure you want to proceed?";
             englishLocale.yes = "Yes";
             englishLocale.no = "No";
             englishLocale.open_folder = "Open Folder";
@@ -187,6 +190,7 @@ namespace SPT.Launcher.Helpers
                 "These mods have not been loaded by the server, but your profile has used them in the past";
             englishLocale.open_link_question_format_1 = "Are you sure you want to open the following link: \n{0}";
             englishLocale.open_link = "Open Link";
+            englishLocale.dev_mode = "Developer Mode";
             #endregion
 
             Directory.CreateDirectory(LocalizationProvider.DefaultLocaleFolderPath);
@@ -222,6 +226,22 @@ namespace SPT.Launcher.Helpers
         //this is going to be some pretty long boiler plate code. So I'm putting everything into regions.
 
         #region All Properties
+        
+        #region dev_mode
+        private string _dev_mode;
+        public string dev_mode
+        {
+            get => _dev_mode;
+            set
+            {
+                if (_dev_mode != value)
+                {
+                    _dev_mode = value;
+                    RaisePropertyChanged(nameof(dev_mode));
+                }
+            }
+        }
+        #endregion
 
         #region ietf_tag
 

@@ -3,7 +3,7 @@
   "native_name": "English",
   "retry": "Retry",
   "server_connecting": "Connecting",
-  "server_unavailable_format_1": "Default server '{0}' is not available.",
+  "server_unavailable_format_1": "No server available at: '{0}' to connect to\nEnsure you have run 'SPT.Server.exe' first",
   "no_servers_available": "No Servers found. Check server list in settings.",
   "settings_menu": "Settings",
   "back": "Back",
@@ -63,7 +63,7 @@
   "side": "Side",
   "level": "Level",
   "patching": "Patching",
-  "file_mismatch_dialog_message": "The input file hash doesn't match the expected hash. You may be using the wrong version\nof SPT for your client files.\n\nDo you want to continue?",
+  "file_mismatch_dialog_message": "We noticed your EFT files do not match what we expected to see for SPT: {0}\nPlease check you have the latest version of EFT installed\nIf not, delete SPT, update live EFT and run the Installer in an empty folder again\n\nAre you sure you want to proceed?",
   "yes": "Yes",
   "no": "No",
   "open_folder": "Open Folder",
@@ -93,5 +93,6 @@
   "inactive_server_mods": "Inactive Server Mods",
   "inactive_server_mods_info_text": "These mods have not been loaded by the server, but your profile has used them in the past",
   "open_link_question_format_1": "Are you sure you want to open the following link: \n{0}",
-  "open_link": "Open Link"
+  "open_link": "Open Link",
+  "dev_mode": "Developer Mode"
 }
